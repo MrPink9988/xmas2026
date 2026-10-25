@@ -1,7 +1,7 @@
 # Weihnachten 2026 – GitHub-Pages-Webseite
 
 ## Sofort ausprobieren
-`index.html` im Browser öffnen. Programm, Playlist, Tagesreiter und Checkliste funktionieren sofort. Kommentare werden **nur im jeweiligen Browser** gespeichert, solange keine Datenbank eingerichtet ist.
+`index.html` im Browser öffnen. Programm, eingebetteter Apple-Music-Player, Tagesreiter und Checkliste funktionieren sofort. Kommentare werden **nur im jeweiligen Browser** gespeichert, solange keine Datenbank eingerichtet ist.
 
 ## Auf GitHub Pages veröffentlichen
 1. `index.html` und `config.js` in ein GitHub-Repository hochladen.
@@ -22,3 +22,6 @@
 - Musik-Link: in `index.html` suchen nach `music.apple.com`.
 - Fotos werden von Unsplash geladen und benötigen Internet. Schriftarten kommen von Google Fonts.
 - Checkliste bleibt absichtlich lokal je Gerät.
+
+## Apple Music
+Der Player ist in `index.html` eingebettet. Je nach Anmeldung und Abo können nur Hörproben verfügbar sein. Die Wiedergabe startet durch Klick auf Play, nicht automatisch.
