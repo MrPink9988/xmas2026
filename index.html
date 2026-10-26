@@ -16,9 +16,14 @@
 .snow-toggle:focus-visible{outline:3px solid #c7a36c;outline-offset:3px}
 @media(prefers-reduced-motion:reduce){.snowflake{animation:none;display:none}.gallery img{transition:none}}
 .music-player{background:var(--green);color:#fff;border-radius:22px;padding:24px;margin:26px auto 56px;box-shadow:0 14px 35px #173c3124}.music-player-head{display:flex;align-items:center;gap:16px;margin-bottom:20px}.music-player-icon{width:60px;height:60px;flex:none;border-radius:15px;display:grid;place-items:center;background:linear-gradient(135deg,#bd5850,#e7b678);font-size:32px}.music-player h3{margin:0;font:600 24px 'Playfair Display',serif}.music-player-head p{margin:4px 0 0;color:#d7e2d8;font-size:14px}.music-player-note{font-size:12px;color:#d7e2d8;margin:12px 0 0}.music-player-note a{color:#fff;text-decoration:underline}@media(max-width:700px){.music-player{padding:16px}.music-player iframe{height:410px!important}}
+
+/* Weihnachts-Freitags-Countdown */
+.friday-countdown{margin:30px auto 0;padding:30px 20px 27px;border-radius:24px;background:radial-gradient(circle at 50% 0%,#315e49,#173c31 72%);color:#fff;text-align:center;position:relative;overflow:hidden;box-shadow:0 14px 32px #173c3128;border:1px solid #bfa06c55}
+.friday-countdown:before,.friday-countdown:after{content:'✦ ❄ ✦';position:absolute;color:#d8bd81;opacity:.22;font-size:30px;top:20px;letter-spacing:10px}.friday-countdown:before{left:16px}.friday-countdown:after{right:12px}
+.friday-countdown .fc-kicker{font-size:11px;letter-spacing:.22em;color:#e5c78d;font-weight:700;text-transform:uppercase}.friday-countdown h2{font:600 clamp(28px,5vw,46px)/1.15 'Playfair Display',serif;color:#fff;margin:12px 0}.friday-countdown .fc-number{color:#f3d49a;font-size:1.5em}.friday-countdown .fc-quip{color:#f2e4ce;font-size:clamp(14px,2vw,18px);margin:10px auto 0;max-width:650px}.friday-countdown .fc-foot{color:#cfb783;font-size:12px;margin-top:14px}.friday-countdown.fc-new .fc-number{animation:fc-glow .8s ease-out}@keyframes fc-glow{50%{text-shadow:0 0 24px #f3d49a}}@media(max-width:700px){.friday-countdown:before,.friday-countdown:after{display:none}.friday-countdown{padding:26px 16px}}
 </style></head><body>
 <div id="snowfall" aria-hidden="true"></div><button class="snow-toggle" id="snow-toggle" type="button" aria-pressed="true">❄ Schnee aus</button><header class="hero"><div class="hero-inner"><div class="stars">✦ ✧ ✦</div><div class="eyebrow">Eine wunderbare Zeit zusammen</div><h1>Unser<br>Weihnachten</h1><p>23. – 25. Dezember 2026</p><div class="hero-actions"><a class="btn light" href="#programm">🎄 Zum Programm</a><a class="btn outline" href="#ideen">💌 Wünsche & Ideen</a></div></div></header>
-<main><div class="wrap"><section class="intro"><div class="section-kicker">Zusammen ist Weihnachten am schönsten</div><h2>Drei Tage voller Weihnachtszauber</h2><p>Gutes Essen, kleine und große Bescherungen, Musik, Spiele und ganz viel gemeinsame Zeit. Hier findet ihr unseren bisherigen Plan – und könnt eure Ideen ergänzen.</p></section><section class="music-player" aria-labelledby="music-title"><div class="music-player-head"><span class="music-player-icon" aria-hidden="true">♫</span><div><h3 id="music-title">Christmas Awesomeness</h3><p>Unsere Weihnachtsplaylist – direkt hier anhören 🎶</p></div></div><iframe title="Apple Music – Christmas Awesomeness" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/de/playlist/christmas-awesomeness/pl.u-DdAN855F0Z7vl0" loading="lazy" style="width:100%;max-width:100%;height:450px;overflow:hidden;border:0;border-radius:14px;background:transparent" ></iframe><p class="music-player-note">Ohne Apple-Music-Abo sind möglicherweise nur Hörproben verfügbar. <a href="https://music.apple.com/de/playlist/christmas-awesomeness/pl.u-DdAN855F0Z7vl0" target="_blank" rel="noopener noreferrer">Playlist in Apple Music öffnen ↗</a></p></section></div>
+<main><div class="wrap"><section class="friday-countdown" id="freitags-countdown" aria-label="Freitage bis Weihnachten"><div class="fc-kicker">✦ Christmas is coming ✦</div><h2 id="fc-title">Weihnachten rückt näher! 🎄</h2><p class="fc-quip" id="fc-quip">Die Vorfreude steigt …</p><div class="fc-foot">❄ Vorfreude, Plätzchen &amp; Weihnachtszauber ❄</div></section><section class="intro"><div class="section-kicker">Zusammen ist Weihnachten am schönsten</div><h2>Drei Tage voller Weihnachtszauber</h2><p>Gutes Essen, kleine und große Bescherungen, Musik, Spiele und ganz viel gemeinsame Zeit. Hier findet ihr unseren bisherigen Plan – und könnt eure Ideen ergänzen.</p></section><section class="music-player" aria-labelledby="music-title"><div class="music-player-head"><span class="music-player-icon" aria-hidden="true">♫</span><div><h3 id="music-title">Christmas Awesomeness</h3><p>Unsere Weihnachtsplaylist – direkt hier anhören 🎶</p></div></div><iframe title="Apple Music – Christmas Awesomeness" allow="autoplay *; encrypted-media *; fullscreen *; clipboard-write" sandbox="allow-forms allow-popups allow-same-origin allow-scripts allow-top-navigation-by-user-activation" src="https://embed.music.apple.com/de/playlist/christmas-awesomeness/pl.u-DdAN855F0Z7vl0" loading="lazy" style="width:100%;max-width:100%;height:450px;overflow:hidden;border:0;border-radius:14px;background:transparent" ></iframe><p class="music-player-note">Ohne Apple-Music-Abo sind möglicherweise nur Hörproben verfügbar. <a href="https://music.apple.com/de/playlist/christmas-awesomeness/pl.u-DdAN855F0Z7vl0" target="_blank" rel="noopener noreferrer">Playlist in Apple Music öffnen ↗</a></p></section></div>
 <section class="wrap" aria-labelledby="gallery-title"><div class="section-kicker" style="text-align:center">Vorfreude auf die Feiertage</div><h2 id="gallery-title" class="section-heading" style="text-align:center">Ein bisschen Weihnachtszauber ✨</h2><div class="gallery">
 <figure><img src="https://images.unsplash.com/photo-1512389142860-9c449e58a543?auto=format&fit=crop&w=750&q=80" alt="Festlich geschmückter Weihnachtsbaum" loading="lazy"><figcaption>Weihnachtslichter</figcaption></figure>
 <figure><img src="https://images.unsplash.com/photo-1482517967863-00e15c9b44be?auto=format&fit=crop&w=750&q=80" alt="Weihnachtliche Dekoration und Lichter" loading="lazy"><figcaption>Gemütlich ankommen</figcaption></figure>
@@ -70,6 +75,28 @@ const checks=[...document.querySelectorAll('#prep input')];try{const stored=JSON
  button.addEventListener('click',()=>{enabled=!enabled;render()});
  reduce.addEventListener?.('change',render);
  render();
+})();
+</script>
+<script>
+(()=>{
+ const title=document.getElementById('fc-title'),quip=document.getElementById('fc-quip'),box=document.getElementById('freitags-countdown');
+ const sayings={8:'Noch genug Zeit für Geschenke. Theoretisch.',7:'Die ersten Plätzchen zählen übrigens nicht als Vorrat.',6:'Weihnachtsmusik aufdrehen. Die Nachbarn werden es lieben.',5:'Ist der Eggnog eigentlich schon kaltgestellt?',4:'Vier Freitage! Zeit, den Geschenkpapierbestand zu prüfen.',3:'Drei Freitage. Der Weihnachtszauber nimmt Fahrt auf!',2:'Zwei Freitage. Wer macht eigentlich die Semmelknödel?',1:'Ein letzter Freitag. Santa, wir wären dann bereit!',0:'Jetzt wird’s ernst: Weihnachten steht vor der Tür!'};
+ let last='';
+ function update(){
+  const parts=new Intl.DateTimeFormat('en-CA',{timeZone:'Europe/Berlin',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(new Date());
+  const p=Object.fromEntries(parts.map(x=>[x.type,x.value]));
+  const y=Number(p.year),m=Number(p.month),d=Number(p.day),today=Date.UTC(y,m-1,d);
+  const christmas=Date.UTC(2026,11,24);
+  if(today>=christmas){title.textContent='Frohe Weihnachten! 🎄';quip.textContent='Jetzt wird gefeiert – schön, dass wir zusammen sind!';return;}
+  let count=0;
+  for(let t=today;t<christmas;t+=86400000)if(new Date(t).getUTCDay()===5)count++;
+  const key=String(count);
+  title.innerHTML='Nur noch <span class="fc-number">'+count+'</span> '+(count===1?'Freitag':'Freitage')+' bis Weihnachten!';
+  quip.textContent=sayings[count]||'Die Vorfreude steigt – Weihnachten kommt näher!';
+  if(last&&last!==key){box.classList.remove('fc-new');void box.offsetWidth;box.classList.add('fc-new')}
+  last=key;
+ }
+ update();setInterval(update,60000);
 })();
 </script>
 </body></html>

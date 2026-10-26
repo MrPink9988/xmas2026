@@ -25,3 +25,6 @@
 
 ## Apple Music
 Der Player ist in `index.html` eingebettet. Je nach Anmeldung und Abo können nur Hörproben verfügbar sein. Die Wiedergabe startet durch Klick auf Play, nicht automatisch.
+
+
+NEU: Freitags-Countdown bis Weihnachten mit woechentlich wechselnden Spruechen (Zeitzone Europe/Berlin).
