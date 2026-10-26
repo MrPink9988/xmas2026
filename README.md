@@ -27,4 +27,7 @@
 Der Player ist in `index.html` eingebettet. Je nach Anmeldung und Abo können nur Hörproben verfügbar sein. Die Wiedergabe startet durch Klick auf Play, nicht automatisch.
 
 
-NEU: Freitags-Countdown bis Weihnachten mit woechentlich wechselnden Spruechen (Zeitzone Europe/Berlin).
+## Freitags-Countdown
+Der Countdown in `index.html` zählt die verbleibenden Freitage bis Heiligabend 2026 und wechselt den Spruch automatisch (Zeitzone `Europe/Berlin`).
+
+## Top 10 Christmas Movies\nDie Filmrubrik wird direkt in `index.html` gepflegt. Sie enthält deutsche und englische Titel, Erscheinungsjahre und kurze Beschreibungen; die Reihenfolge ist noch keine Wertung.\n\nDas lokal im Repository gespeicherte Banner `a_cozy_cinematic_festive_christmas_living_room_s.png` wird oberhalb der Filmkarten angezeigt. Bitte beim Umbenennen oder Verschieben der Bilddatei auch den `src`-Pfad in `index.html` anpassen.\n
